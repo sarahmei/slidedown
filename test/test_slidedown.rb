@@ -30,7 +30,20 @@ describe 'SlideDown' do
     |# The title
     MD
     second_slide = Nokogiri::HTML(slidedown.render).search('#track > div')[1]
-    second_slide['class'].should.include('awesome')
+    second_slide['class'].strip.should.equal('awesome')
+  end
+
+  it 'deals with white space after class names' do
+    with_markdown <<-MD
+    |# first slide
+    |!SLIDE code
+    |
+    |    def foo
+    |      :bar
+    |    end
+    MD
+    second_slide = Nokogiri::HTML(slidedown.render).search('#track > div')[1]
+    second_slide['class'].strip.should.equal('code')
   end
 
   # this one is hard
