@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'nokogiri'
-require 'rdiscount'
+require 'maruku'
 require 'makers-mark'
 require 'erb'
 require File.join(File.dirname(__FILE__), 'slide')
