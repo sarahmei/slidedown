@@ -69,6 +69,8 @@
   
   var move = function(event) {
     var DIRECTIONS = {
+      1: -1,  // LEFT MOUSE BTN
+      3: 1,   // RIGHT MOUSE BTN
       37: -1, // ARROW LEFT
       39: 1,  // ARROW RIGHT
       32: 1,  // SPACE BAR
@@ -82,6 +84,7 @@
   
   $(window).bind('resize', function() { adjustSlides(); });
   $(document).bind('keydown', move);
+  $(document).bind('click', move);
   $(document).bind('hash.changed', adjustSlides);
   $(document).ready(function() {
     setIndex(getIndex() || 0);

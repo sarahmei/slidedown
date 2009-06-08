@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{slidedown}
-  s.version = "0.0.7"
+  s.version = "0.0.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Pat Nakajima"]
-  s.date = %q{2009-03-10}
+  s.authors = ["Pat Nakajima", "Sarah Mei"]
+  s.date = %q{2009-06-07}
   s.default_executable = %q{slidedown}
   s.executables = ["slidedown"]
   s.files = %W[
