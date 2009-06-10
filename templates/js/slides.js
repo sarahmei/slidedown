@@ -69,7 +69,7 @@
   
   var move = function(event) {
     var DIRECTIONS = {
-      1: 1,  // LEFT MOUSE BTN
+      1: 1,   // LEFT MOUSE BTN
       3: 1,   // RIGHT MOUSE BTN
       37: -1, // ARROW LEFT
       39: 1,  // ARROW RIGHT

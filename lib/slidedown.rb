@@ -56,7 +56,7 @@ class SlideDown
 
   def extract_classes!
     @classes = []
-    @raw.gsub!(/^!SLIDE\s*([a-z\s]*)$/) do |klass|
+    @raw.gsub!(/^!SLIDE *([a-z ]*)$/) do |klass|
       @classes << klass.to_s.chomp.gsub('!SLIDE', '')
       "!SLIDE"
     end ; @classes
