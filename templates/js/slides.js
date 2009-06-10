@@ -38,7 +38,7 @@
     var index = getIndex();
     var offset = (index || 0) * dimensions.width;
     
-    $('#track').animate({ marginLeft: '-' + offset + 'px' }, 200);
+    $('#track').animate({ marginLeft: '-' + offset + 'px' }, 0);
   }
   
   var verticalAlign = function() {
