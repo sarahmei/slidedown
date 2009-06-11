@@ -36,7 +36,7 @@ class SlideDown
   private
 
   def lines
-    @lines ||= @raw.split(/^!SLIDE\s*([a-z\s]*)$/) \
+    @lines ||= @raw.split(/^!SLIDE *([a-z ]*)$/) \
       .reject { |line| line.empty? }
   end
 
